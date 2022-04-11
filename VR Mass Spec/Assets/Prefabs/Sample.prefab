@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1426139739431312140}
   - component: {fileID: 1426139739431312139}
   - component: {fileID: 4473322014412645641}
+  - component: {fileID: 4790877937770991380}
   m_Layer: 0
   m_Name: Sample
   m_TagString: Untagged
@@ -31,7 +32,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1426139739431312138}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.05799991, y: -1.1214, z: 2.1901002}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -38714,7 +38715,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 3
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -38826,3 +38827,17 @@ MonoBehaviour:
   sampleName: 
   sampleMass: 
   sampleZ: 0
+--- !u!114 &4790877937770991380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426139739431312138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f544e09f6e739d54da9f81d09c40d606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scalingFactor: 0.01
+  endScale: 0.5

@@ -29,6 +29,6 @@ public class SampleCreator : MonoBehaviour
         var sampleObject = sample.GetComponent<Sample>();
         sampleObject.sampleZ = sampleZ;
         print(sampleZ.ToString() + " " + sampleName + " " + sampleMass);
-        sampleUI.GetComponentInChildren<TextMeshProUGUI>().text = "Z: " + sampleZ.ToString() + " Element: " + sampleName + " Mass: " + sampleMass;
+        sampleUI.GetComponentInChildren<TextMeshProUGUI>().text = "Isotope Selected: " + sampleName + ". \n It has an atomic mass of " + sampleMass + "u \n and an atomic number of " + sampleZ + ".";
     }
 }

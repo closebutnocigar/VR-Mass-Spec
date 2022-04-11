@@ -10,9 +10,21 @@ namespace PathCreation.Examples
         public EndOfPathInstruction endOfPathInstruction;
         public float speed = 5;
         float distanceTravelled;
+        public PathCreator[] pathCreators;
 
         void Start() {
-            speed = Random.Range(2f, 5f);
+            if (pathCreator == pathCreators[0])
+            {
+                speed = Random.Range(0.5f, 1f);
+            }
+            else if (pathCreator == pathCreators[1]){
+                speed = Random.Range(1f, 2f);
+            }
+            else
+            {
+                speed = Random.Range(2f, 5f);
+            }
+            
             transform.localScale = new Vector3(Random.Range(0.03f, 0.05f), Random.Range(0.03f, 0.05f), Random.Range(0.03f, 0.05f));
             if (pathCreator != null)
             {
