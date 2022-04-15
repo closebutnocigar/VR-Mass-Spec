@@ -44,4 +44,16 @@ public class MSEquationManager : MonoBehaviour
     {
         return Mathf.Round(value * 100f) / 100f;
     }
+
+    public float CalculateCorrectBValue(float elementMass)
+    {
+        float radius = 0.23f; //centimeters
+        float mass = elementMass; //element mass
+        float voltage = 10000f; //10kV = 10,000V
+        float charge = 1f;
+        float correctMagneticFieldValue = Mathf.Sqrt(2 * mass * voltage / charge) / radius;
+        Debug.Log(correctMagneticFieldValue);
+
+        return correctMagneticFieldValue;
+    }
 }

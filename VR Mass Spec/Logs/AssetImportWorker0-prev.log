@@ -1,0 +1,393 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.2f1 (8fd9074bf66c) revision 9427207'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro N; OS build 19041.1415; Version 2004; 64bit' Language: 'en' Physical Memory: 32678 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+D:\Unity Editors\2020.3.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Git Projects/VR-Mass-Spec/VR Mass Spec
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59765
+Successfully changed project path to: D:/Git Projects/VR-Mass-Spec/VR Mass Spec
+D:/Git Projects/VR-Mass-Spec/VR Mass Spec
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 90.62 ms, found 9 plugins.
+Preloading 2 native plugins for Editor in 0.97 ms.
+Initialize engine version: 2020.3.2f1 (8fd9074bf66c)
+[Subsystems] Discovering subsystems at path D:/Unity Editors/2020.3.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Git Projects/VR-Mass-Spec/VR Mass Spec/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2182)
+    Vendor:   
+    VRAM:     5991 MB
+    Driver:   30.0.14.7111
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'D:/Unity Editors/2020.3.2f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity Editors/2020.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Unity Editors/2020.3.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56724
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity Editors/2020.3.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Unity Editors/2020.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000851 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 57.87 ms, found 9 plugins.
+Preloading 2 native plugins for Editor in 0.09 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.169 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003102 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 66.41 ms, found 9 plugins.
+Preloading 2 native plugins for Editor in 0.09 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Git Projects\VR-Mass-Spec\VR Mass Spec\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Git Projects\VR-Mass-Spec\VR Mass Spec\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.045 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.65 ms, found 9 plugins.
+Preloading 2 native plugins for Editor in 0.07 ms.
+Unloading 3876 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 165.3 MB.
+System memory in use after: 165.5 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4328.
+Total: 2.163600 ms (FindLiveObjects: 0.309800 ms CreateObjectMapping: 0.165100 ms MarkObjects: 1.617200 ms  DeleteObjects: 0.070700 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Rotation Quad.fbx
+  artifactKey: Guid(a9b200be498c8c642b56e8847ee2b1bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Rotation Quad.fbx using Guid(a9b200be498c8c642b56e8847ee2b1bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1b5534fba81dbf93a1578d200d76496') in 0.211347 seconds
+  Import took 0.216773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/RPQ and SEM.fbx
+  artifactKey: Guid(79e3a5034d933624aa69e822b5351c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/RPQ and SEM.fbx using Guid(79e3a5034d933624aa69e822b5351c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdcad34638d075483067a3d3c9b46f3d') in 0.176079 seconds
+  Import took 0.181926 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2
+  artifactKey: Guid(7f7190de3bb6a84498c1521189ed289a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2 using Guid(7f7190de3bb6a84498c1521189ed289a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86630639ae0be57acc282839e4fb1451') in 0.003841 seconds
+  Import took 0.009631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Plasma Torch.fbx
+  artifactKey: Guid(d6aa9c3354950a34384521e1e9988943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Plasma Torch.fbx using Guid(d6aa9c3354950a34384521e1e9988943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c87aa09592b6e87f411c92a8e840f7f') in 0.133363 seconds
+  Import took 0.138659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Multicollector Module.fbx
+  artifactKey: Guid(ae67811aea0d5cd49b75ac41a5858cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Multicollector Module.fbx using Guid(ae67811aea0d5cd49b75ac41a5858cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fa963357919a5cd5e95c8202894ebcf') in 0.094859 seconds
+  Import took 0.100174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Spray Chamber.fbx
+  artifactKey: Guid(6ceb5905d83718b438f2e60eaaca804b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Spray Chamber.fbx using Guid(6ceb5905d83718b438f2e60eaaca804b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3553e5718f620f404ab2dd704514836b') in 0.029054 seconds
+  Import took 0.034297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/ESA.fbx
+  artifactKey: Guid(82dda2c6f7c3d4749accae5d29af6bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/ESA.fbx using Guid(82dda2c6f7c3d4749accae5d29af6bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44f9c23ea5c49bb126d22639c200d901') in 0.076793 seconds
+  Import took 0.082161 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Magnet.fbx
+  artifactKey: Guid(f37c6cd92e24f684480a7d59e2e9c8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Magnet.fbx using Guid(f37c6cd92e24f684480a7d59e2e9c8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05d12111aced6748bb82f1603dfffd5d') in 0.016111 seconds
+  Import took 0.021460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Zoom Optics.fbx
+  artifactKey: Guid(06757ba0246ef1040b78a6646327c747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Zoom Optics.fbx using Guid(06757ba0246ef1040b78a6646327c747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '065b640d2d99f0941a1816096001ee29') in 0.214143 seconds
+  Import took 0.220785 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Multicollector Holder.fbx
+  artifactKey: Guid(8a113d203dab6604fa16db71525afcd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Multicollector Holder.fbx using Guid(8a113d203dab6604fa16db71525afcd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7c5ad8e695f4c7b285dffe8c4a5791a') in 0.014178 seconds
+  Import took 0.020097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Plasma Interface.fbx
+  artifactKey: Guid(e9ba4f6e1e5a0b94fb351663aeae0b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Plasma Interface.fbx using Guid(e9ba4f6e1e5a0b94fb351663aeae0b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3611a6f4e97f2848b1ab84f6eb739773') in 0.017941 seconds
+  Import took 0.024268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Load coil.fbx
+  artifactKey: Guid(75264a68837af4048a01a1b38c619f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Load coil.fbx using Guid(75264a68837af4048a01a1b38c619f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01fb4a84565bc54644af57b0fafa66e0') in 0.024048 seconds
+  Import took 0.029565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Transfer Lens System.fbx
+  artifactKey: Guid(c8b02dd5910a4834ab0563cafbe117f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Transfer Lens System.fbx using Guid(c8b02dd5910a4834ab0563cafbe117f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f697b02a6638d5cc37ff53c199242997') in 0.118622 seconds
+  Import took 0.124074 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2164.016019 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/ESA 2.fbx
+  artifactKey: Guid(82dda2c6f7c3d4749accae5d29af6bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/ESA 2.fbx using Guid(82dda2c6f7c3d4749accae5d29af6bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2da1c1ec1cc096b8a133cbf05a225399') in 0.074564 seconds
+  Import took 0.080758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.518505 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Load coil 2.fbx
+  artifactKey: Guid(75264a68837af4048a01a1b38c619f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Load coil 2.fbx using Guid(75264a68837af4048a01a1b38c619f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d3620b5fb83dc8d1c42b10c7ae0d054') in 0.028480 seconds
+  Import took 0.033798 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.105379 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Magnet 2.fbx
+  artifactKey: Guid(f37c6cd92e24f684480a7d59e2e9c8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Magnet 2.fbx using Guid(f37c6cd92e24f684480a7d59e2e9c8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2494d7fb2b5c8c0000c98fac567d2fbd') in 0.012338 seconds
+  Import took 0.018000 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.014871 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Multicollector Holder 2.fbx
+  artifactKey: Guid(8a113d203dab6604fa16db71525afcd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Multicollector Holder 2.fbx using Guid(8a113d203dab6604fa16db71525afcd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c665035f559f83169f038725c56725ca') in 0.014408 seconds
+  Import took 0.020803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.369547 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Multicollector Module 2.fbx
+  artifactKey: Guid(ae67811aea0d5cd49b75ac41a5858cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Multicollector Module 2.fbx using Guid(ae67811aea0d5cd49b75ac41a5858cf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd211dd5d586f080bd938f7920e9cf7d8') in 0.088825 seconds
+  Import took 0.094347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.408929 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Plasma Interface 2.fbx
+  artifactKey: Guid(e9ba4f6e1e5a0b94fb351663aeae0b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Plasma Interface 2.fbx using Guid(e9ba4f6e1e5a0b94fb351663aeae0b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7deb06735fc08935282b75e8ed38be4f') in 0.017991 seconds
+  Import took 0.024725 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.614680 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Plasma Torch 2.fbx
+  artifactKey: Guid(d6aa9c3354950a34384521e1e9988943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Plasma Torch 2.fbx using Guid(d6aa9c3354950a34384521e1e9988943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2095fd876bf449bd41ff242fd592803') in 0.118014 seconds
+  Import took 0.123089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.092358 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Rotation Quad 2.fbx
+  artifactKey: Guid(a9b200be498c8c642b56e8847ee2b1bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Rotation Quad 2.fbx using Guid(a9b200be498c8c642b56e8847ee2b1bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2f822ddb011c273f27c844cf9b2201c') in 0.049933 seconds
+  Import took 0.055235 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.609753 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/RPQ and SEM 2.fbx
+  artifactKey: Guid(79e3a5034d933624aa69e822b5351c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/RPQ and SEM 2.fbx using Guid(79e3a5034d933624aa69e822b5351c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7252d85a8548c7f11cd05c4acc60015') in 0.140407 seconds
+  Import took 0.146261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.802433 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Spray Chamber 2.fbx
+  artifactKey: Guid(6ceb5905d83718b438f2e60eaaca804b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Spray Chamber 2.fbx using Guid(6ceb5905d83718b438f2e60eaaca804b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cd32a7981e36e6a8b02e50b4995e4b2') in 0.026754 seconds
+  Import took 0.032091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.816954 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Transfer Lens System 2.fbx
+  artifactKey: Guid(c8b02dd5910a4834ab0563cafbe117f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Transfer Lens System 2.fbx using Guid(c8b02dd5910a4834ab0563cafbe117f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3548841a5a7c81b38757c27b155f814') in 0.080423 seconds
+  Import took 0.085551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.082692 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Zoom Optics new.fbx
+  artifactKey: Guid(06757ba0246ef1040b78a6646327c747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Zoom Optics new.fbx using Guid(06757ba0246ef1040b78a6646327c747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84958fa7f3fa1aef35d7b1241f0abedf') in 0.201432 seconds
+  Import took 0.208588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1650.828386 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Load coil 2.fbx
+  artifactKey: Guid(75264a68837af4048a01a1b38c619f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Load coil 2.fbx using Guid(75264a68837af4048a01a1b38c619f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8254e6cf1f9e04b9df6f63ac28a523c2') in 0.022570 seconds
+  Import took 0.028905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.083964 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Load coil 2.fbx
+  artifactKey: Guid(75264a68837af4048a01a1b38c619f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Load coil 2.fbx using Guid(75264a68837af4048a01a1b38c619f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '707a0398ce0caea59ea5fef588b30480') in 0.023315 seconds
+  Import took 0.029077 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003757 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 9 plugins.
+Preloading 2 native plugins for Editor in 0.09 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Git Projects\VR-Mass-Spec\VR Mass Spec\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Git Projects\VR-Mass-Spec\VR Mass Spec\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.865 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 9 plugins.
+Preloading 2 native plugins for Editor in 0.08 ms.
+Unloading 3747 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.0 MB.
+System memory in use after: 160.2 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 4375.
+Total: 2.508600 ms (FindLiveObjects: 0.322600 ms CreateObjectMapping: 0.275000 ms MarkObjects: 1.890200 ms  DeleteObjects: 0.019900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 6130.471670 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/ESA 2.fbx
+  artifactKey: Guid(82dda2c6f7c3d4749accae5d29af6bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/ESA 2.fbx using Guid(82dda2c6f7c3d4749accae5d29af6bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1235b8b39e4038d40a6e65c8e39ba70a') in 0.336903 seconds
+  Import took 0.343836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.014931 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/ESA 2.fbx
+  artifactKey: Guid(82dda2c6f7c3d4749accae5d29af6bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/ESA 2.fbx using Guid(82dda2c6f7c3d4749accae5d29af6bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d0fb49ab6d42999d579b7d3e09a6ebf') in 0.231490 seconds
+  Import took 0.237233 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 264.695703 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/ESA 2.fbx
+  artifactKey: Guid(82dda2c6f7c3d4749accae5d29af6bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/ESA 2.fbx using Guid(82dda2c6f7c3d4749accae5d29af6bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '669e51f92924d9bcff51f9719c42abba') in 0.087254 seconds
+  Import took 0.093221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Material.003.mat
+  artifactKey: Guid(e9ed52d82db45f642beac23235745d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Material.003.mat using Guid(e9ed52d82db45f642beac23235745d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56471e9f6a75cd8424eb07247c3a3c0a') in 0.016216 seconds
+  Import took 0.022134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/silver.mat
+  artifactKey: Guid(527327244856030459f5af1f14cc08e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/silver.mat using Guid(527327244856030459f5af1f14cc08e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '593459defeeaba531cd7f7f790836ecf') in 0.007702 seconds
+  Import took 0.014370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/Nuts.mat
+  artifactKey: Guid(d731343fc4ac7ff48a93a1c94171b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/Nuts.mat using Guid(d731343fc4ac7ff48a93a1c94171b6f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96a812887e1839ce9bb7c97cbb2e7732') in 0.009729 seconds
+  Import took 0.015901 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.211854 seconds.
+  path: Assets/Neptune 3D Models/Mass Spec 2/ESA 2.fbx
+  artifactKey: Guid(82dda2c6f7c3d4749accae5d29af6bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Neptune 3D Models/Mass Spec 2/ESA 2.fbx using Guid(82dda2c6f7c3d4749accae5d29af6bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e24871171d89c2265832bef1abad1ab6') in 0.074599 seconds
+  Import took 0.080036 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
