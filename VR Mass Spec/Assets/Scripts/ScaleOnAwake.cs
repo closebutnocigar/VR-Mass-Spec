@@ -20,7 +20,6 @@ public class ScaleOnAwake : MonoBehaviour
     public void ScaleToFloat(float scalingFactor, float endScale)
     {
         transform.localScale += Vector3.one * scalingFactor;
-        print(transform.localScale);    
         if (transform.localScale.x >= endScale)
         {
             Destroy(this);

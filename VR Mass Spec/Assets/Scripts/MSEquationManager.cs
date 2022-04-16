@@ -13,21 +13,14 @@ public class MSEquationManager : MonoBehaviour
     public float charge;
     public float magneticFieldStrength;
 
-    public TextMeshProUGUI massValueText, velocityValueText, chargeValueText, magneticFieldStrengthValueText;
+    public TextMeshProUGUI massValueText, velocityValueText, chargeValueText, magneticFieldStrengthValueText, correctMagneticFieldStrengthText;
 
     public PathCreator pathCreator;
+
     private void Update()
     {
         UpdateValues();
-    }
-    private void Start()
-    {
-        PrintBezierPoints();
-    }
-    public void PrintBezierPoints()
-    {
-        for (int i = 0; i <= pathCreator.bezierPath.NumPoints-1; i++ )
-        print("Bezier Point Index " + i + " is: " + pathCreator.bezierPath.GetPoint(i));
+        
     }
     public void UpdateValues()
     {
@@ -52,8 +45,8 @@ public class MSEquationManager : MonoBehaviour
         float voltage = 10000f; //10kV = 10,000V
         float charge = 1f;
         float correctMagneticFieldValue = Mathf.Sqrt(2 * mass * voltage / charge) / radius;
-        Debug.Log(correctMagneticFieldValue);
-
+        correctMagneticFieldStrengthText.text = correctMagneticFieldValue.ToString();  
         return correctMagneticFieldValue;
+
     }
 }

@@ -38776,7 +38776,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_AttachTransform: {fileID: 0}
-  m_AttachEaseInTime: 0.15
+  m_AttachEaseInTime: 3
   m_MovementType: 2
   m_VelocityDamping: 1
   m_VelocityScale: 1
@@ -38824,8 +38824,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13a08bfb8ada497408638aca2993387f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sampleName: 
-  sampleMass: 
+  equationManager: {fileID: 0}
+  magneticFieldStrengthSlider: {fileID: 0}
+  runButton: {fileID: 0}
+  pathManager: {fileID: 0}
+  sampleMass: 0
   sampleZ: 0
 --- !u!114 &4790877937770991380
 MonoBehaviour:

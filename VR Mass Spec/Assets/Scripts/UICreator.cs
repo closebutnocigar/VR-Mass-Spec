@@ -27,8 +27,10 @@ public class UICreator : MonoBehaviour
             elementText.text = elements.elementSymbols[i];
 
             int x = i;
+            elementButton.GetComponent<Button>().onClick.AddListener(delegate { sampleCreator.DestroyExistingSamples(); });
             elementButton.GetComponent<Button>().onClick.AddListener(delegate { sampleCreator.SetSampleValues(elements.elementNames[x], elements.elementMassValues[x], elements.ZValue[x]); });
             elementButton.GetComponent<Button>().onClick.AddListener(delegate { sampleCreator.CreateSample(); });
+            
             
 
         }

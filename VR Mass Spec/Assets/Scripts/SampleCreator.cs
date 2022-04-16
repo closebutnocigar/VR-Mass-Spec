@@ -24,11 +24,23 @@ public class SampleCreator : MonoBehaviour
     }
     public void CreateSample()
     {
+
         var sample = Instantiate(samplePrefab, sampleStartLocation);
         sample.name = sampleName + " Sample";
         var sampleObject = sample.GetComponent<Sample>();
         sampleObject.sampleZ = sampleZ;
+        sampleObject.sampleMass = sampleMass;
         print(sampleZ.ToString() + " " + sampleName + " " + sampleMass);
         sampleUI.GetComponentInChildren<TextMeshProUGUI>().text = "Isotope Selected: " + sampleName + ". \n It has an atomic mass of " + sampleMass + "u \n and an atomic number of " + sampleZ + ".";
+    }
+
+    public void DestroyExistingSamples()
+    {
+        var existingSample = GameObject.FindObjectOfType<Sample>();
+        if (existingSample != null)
+        {
+            Destroy(existingSample.gameObject);
+
+        }
     }
 }
