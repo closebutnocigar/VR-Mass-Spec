@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Sample : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Sample : MonoBehaviour
     public Slider magneticFieldStrengthSlider;
     public Button runButton;
     public IonPathManager pathManager;
+    public TextMeshProUGUI resultsText;
 
     public float sampleMass;
     public int sampleZ;
@@ -20,6 +22,7 @@ public class Sample : MonoBehaviour
         pathManager = GameObject.Find("IonPathManager").GetComponent<IonPathManager>();
         equationManager = GameObject.Find("MSEquationManager").GetComponent<MSEquationManager>();
         magneticFieldStrengthSlider = GameObject.Find("MagneticFieldStrengthSlider").GetComponent<Slider>();
+        resultsText = GameObject.Find("ResultsText").GetComponent<TextMeshProUGUI>();
     }
     public void DecidePath()
     {
@@ -56,41 +59,41 @@ public class Sample : MonoBehaviour
         if (userBField <= correctRangeUpper && userBField >= correctRangeLower)
         {
             pathManager.isCorrect = true;
-            Debug.Log("The ions were deflected into the collector! You picked the correct B Field Value.");
+            resultsText.text = "The ions were deflected into the collector! You picked the correct B Field Value.";
         }
         else if (userBField <= slightlyStrongUpper && userBField >= slightlyStrongLower)
         {
             pathManager.isSlightlyStrong = true;
-            Debug.Log("The ions were deflected too far. Try lowering the B field.");
+            resultsText.text = "The ions were deflected too far. Try lowering the B field.";
         }
         else if (userBField >= veryStrong)
         {
             pathManager.isVeryStrong = true;
-            Debug.Log("The ions were deflected very strongly. You should adjust the B field to a much lower value.");
+            resultsText.text = "The ions were deflected very strongly. You should adjust the B field to a much lower value.";
         }
         else if (userBField <= veryWeak)
         {
             pathManager.isVeryWeak = true;
-            Debug.Log("The ions were barely deflected at all. You should adjust the B field to a much higher value.");
+            resultsText.text = "The ions were barely deflected at all. You should adjust the B field to a much higher value.";
         }
         else if (userBField <= slightlyWeakUpper && userBField >= slightlyWeakLower)
         {
             pathManager.isSlightlyWeak = true;
-            Debug.Log("The ions just barely missed the detector. Try adjusting the B field to a slightly higher value.");
+            resultsText.text = "The ions just barely missed the detector. Try adjusting the B field to a slightly higher value.";
         } 
         else if (userBField <= weakUpper && userBField >= weakLower)
         {
             pathManager.isWeak = true;
-            Debug.Log("The ions missed the detector by a good margin. Try adjusting the B field to a higher value.");
+            resultsText.text = "The ions missed the detector by a good margin. Try adjusting the B field to a higher value.";
         }
         else if (userBField <= strongUpper && userBField >= strongLower)
         {
             pathManager.isStrong = true;
-            Debug.Log("The ions were deflected too strongly. Try adjusting the B field to a lower value.");
+            resultsText.text = "The ions were deflected too strongly. Try adjusting the B field to a lower value.";
         }
         else
         {
-            Debug.Log("The ions were not deflected correctly. Change your B Value");
+            resultsText.text = "The ions were not deflected correctly. Change your B Value";
         }
 
     }
