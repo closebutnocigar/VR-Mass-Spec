@@ -8,6 +8,7 @@ public class SampleCreator : MonoBehaviour
     public GameObject samplePrefab;
     public Transform sampleStartLocation;
     public GameObject sampleUI;
+    public GameObject samplePedestalUI;
     
     [Header("Element Attributes")]
     [SerializeField]
@@ -31,7 +32,20 @@ public class SampleCreator : MonoBehaviour
         sampleObject.sampleZ = sampleZ;
         sampleObject.sampleMass = sampleMass;
         print(sampleZ.ToString() + " " + sampleName + " " + sampleMass);
+        samplePedestalUI.SetActive(true);
+        samplePedestalUI.GetComponentInChildren<TextMeshProUGUI>().text = "You have created a sample of " + sampleName;
+
+
+    }
+
+    public void SetSampleFactsUI()
+    {
         sampleUI.GetComponentInChildren<TextMeshProUGUI>().text = "Isotope Selected: " + sampleName + ". \n It has an atomic mass of " + sampleMass + "u \n and an atomic number of " + sampleZ + ".";
+    }
+
+    public void ResetSampleFactsUI()
+    {
+        sampleUI.GetComponentInChildren<TextMeshProUGUI>().text = "Facts about the isotope will display here when you bring the sample to the machine.";
     }
 
     public void DestroyExistingSamples()

@@ -36,18 +36,18 @@ public class IonPathManager : MonoBehaviour
         ResetBools();
 
         ResetPaths();
-        StartPathsBeforeMagneticSector();
 
-        if (currentSample != null)
+        if (currentSample != null && sampleIsSocketed)
         {
             currentSample.DecidePath();
         }
         else
         {
-            resultsText.text = "There is no sample selected. Go to the table on the right and select an isotope.";
+            resultsText.text = "Error: There is no sample selected. Select an isotope from the wall on the left and bring it to the machine.";
             return;
         }
 
+        StartPathsBeforeMagneticSector();
 
         if (isCorrect)
             {
@@ -106,5 +106,15 @@ public class IonPathManager : MonoBehaviour
         pathParticles[0].SetActive(true);
         pathParticles[1].SetActive(true);
         pathParticles[2].SetActive(true);
+    }
+
+    public void SampleIsSocketed()
+    {
+        sampleIsSocketed = true;
+    }
+
+    public void SampleIsNotSocketed()
+    {
+        sampleIsSocketed = false;
     }
 }
