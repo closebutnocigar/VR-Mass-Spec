@@ -46,7 +46,7 @@ public class Sample : MonoBehaviour
 
         float slightlyWeakUpper = correctBField - 1.00001f * correctBField / 100f;
         float slightlyWeakLower = correctBField - 3 * correctBField / 100f;
-        Debug.Log("Slightly Weak Range is between " + slightlyWeakLower + " and " + slightlyWeakUpper);
+
 
         float weakUpper = correctBField - 3.00001f * correctBField / 100f;
         float weakLower = correctBField - 5.00f * correctBField / 100f;
@@ -59,7 +59,7 @@ public class Sample : MonoBehaviour
         if (userBField <= correctRangeUpper && userBField >= correctRangeLower)
         {
             pathManager.isCorrect = true;
-            resultsText.text = "The ions were deflected into the collector! You picked the correct B Field Value.";
+            resultsText.text = "The ions were deflected into the collector! You picked the correct B Field Value for this sample.";
         }
         else if (userBField <= slightlyStrongUpper && userBField >= slightlyStrongLower)
         {
