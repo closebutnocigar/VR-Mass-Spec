@@ -9,14 +9,11 @@ public class MSEquationManager : MonoBehaviour
     public Slider magneticFieldStrengthSliderCoarse;
     public Slider magneticFieldStrengthSliderFine;
 
-    public float mass;
-    public float velocity;
-    public float charge;
     public float magneticFieldStrengthCoarse;
     public float magneticFieldStrengthFine;
     public float magneticFieldStrength;
 
-    public TextMeshProUGUI massValueText, velocityValueText, chargeValueText, magneticFieldStrengthValueText, correctMagneticFieldStrengthText;
+    public TextMeshProUGUI magneticFieldStrengthValueText, correctMagneticFieldStrengthText;
 
     public PathCreator pathCreator;
 
@@ -30,9 +27,6 @@ public class MSEquationManager : MonoBehaviour
         magneticFieldStrengthCoarse = RoundValueToInterval(magneticFieldStrengthSliderCoarse.value, 1000);
         magneticFieldStrengthFine = RoundValueToInterval(magneticFieldStrengthSliderFine.value, 1);
         magneticFieldStrength = magneticFieldStrengthCoarse + magneticFieldStrengthFine;
-        massValueText.text = mass.ToString();
-        velocityValueText.text = velocity.ToString();
-        chargeValueText.text = charge.ToString();
         magneticFieldStrengthValueText.text = magneticFieldStrength.ToString();
 
     }
