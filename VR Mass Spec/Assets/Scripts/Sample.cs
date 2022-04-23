@@ -7,7 +7,7 @@ using TMPro;
 public class Sample : MonoBehaviour
 {
     public MSEquationManager equationManager;
-    public Slider magneticFieldStrengthSlider;
+
     public Button runButton;
     public IonPathManager pathManager;
     public TextMeshProUGUI resultsText;
@@ -21,7 +21,6 @@ public class Sample : MonoBehaviour
         runButton = GameObject.Find("Run Button").GetComponent<Button>();
         pathManager = GameObject.Find("IonPathManager").GetComponent<IonPathManager>();
         equationManager = GameObject.Find("MSEquationManager").GetComponent<MSEquationManager>();
-        magneticFieldStrengthSlider = GameObject.Find("MagneticFieldStrengthSlider").GetComponent<Slider>();
         resultsText = GameObject.Find("ResultsText").GetComponent<TextMeshProUGUI>();
     }
     public void DecidePath()
@@ -29,7 +28,7 @@ public class Sample : MonoBehaviour
         float correctBField = equationManager.CalculateCorrectBValue(sampleMass);
         print("The correct B field value for the current sample is: " + correctBField);
 
-        float userBField = magneticFieldStrengthSlider.value;
+        float userBField = equationManager.magneticFieldStrength;
         print("The user B field value is: " + userBField);
 
 

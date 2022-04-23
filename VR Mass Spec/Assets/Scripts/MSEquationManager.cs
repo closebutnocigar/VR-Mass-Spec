@@ -6,11 +6,14 @@ using UnityEngine.UI;
 using PathCreation;
 public class MSEquationManager : MonoBehaviour
 {
-    public Slider magneticFieldStrengthSlider;
+    public Slider magneticFieldStrengthSliderCoarse;
+    public Slider magneticFieldStrengthSliderFine;
 
     public float mass;
     public float velocity;
     public float charge;
+    public float magneticFieldStrengthCoarse;
+    public float magneticFieldStrengthFine;
     public float magneticFieldStrength;
 
     public TextMeshProUGUI massValueText, velocityValueText, chargeValueText, magneticFieldStrengthValueText, correctMagneticFieldStrengthText;
@@ -19,13 +22,14 @@ public class MSEquationManager : MonoBehaviour
 
     private void Update()
     {
-        UpdateValues();
+        //UpdateValues();
         
     }
     public void UpdateValues()
     {
-        magneticFieldStrength = TwoDecimalRound(magneticFieldStrengthSlider.value);
-
+        magneticFieldStrengthCoarse = RoundValueToInterval(magneticFieldStrengthSliderCoarse.value, 1000);
+        magneticFieldStrengthFine = RoundValueToInterval(magneticFieldStrengthSliderFine.value, 1);
+        magneticFieldStrength = magneticFieldStrengthCoarse + magneticFieldStrengthFine;
         massValueText.text = mass.ToString();
         velocityValueText.text = velocity.ToString();
         chargeValueText.text = charge.ToString();
@@ -36,6 +40,12 @@ public class MSEquationManager : MonoBehaviour
     public float TwoDecimalRound(float value)
     {
         return Mathf.Round(value * 100f) / 100f;
+    }
+
+    public float RoundValueToInterval(float value, float interval)
+    {
+        value = Mathf.Round(value / interval) * interval;
+        return value;
     }
 
     public float CalculateCorrectBValue(float elementMass)
