@@ -8,7 +8,6 @@ public class Sample : MonoBehaviour
 {
     public MSEquationManager equationManager;
 
-    public Button runButton;
     public IonPathManager pathManager;
     public TextMeshProUGUI resultsText;
 
@@ -17,8 +16,6 @@ public class Sample : MonoBehaviour
 
     private void Awake()
     {
-        
-        runButton = GameObject.Find("Run Button").GetComponent<Button>();
         pathManager = GameObject.Find("IonPathManager").GetComponent<IonPathManager>();
         equationManager = GameObject.Find("MSEquationManager").GetComponent<MSEquationManager>();
         resultsText = GameObject.Find("ResultsText").GetComponent<TextMeshProUGUI>();
@@ -45,7 +42,6 @@ public class Sample : MonoBehaviour
 
         float slightlyWeakUpper = correctBField - 1.00001f * correctBField / 100f;
         float slightlyWeakLower = correctBField - 3 * correctBField / 100f;
-
 
         float weakUpper = correctBField - 3.00001f * correctBField / 100f;
         float weakLower = correctBField - 5.00f * correctBField / 100f;
