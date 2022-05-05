@@ -27,7 +27,7 @@ public class MSEquationManager : MonoBehaviour
         magneticFieldStrengthCoarse = RoundValueToInterval(magneticFieldStrengthSliderCoarse.value, 1000);
         magneticFieldStrengthFine = RoundValueToInterval(magneticFieldStrengthSliderFine.value, 1);
         magneticFieldStrength = magneticFieldStrengthCoarse + magneticFieldStrengthFine;
-        magneticFieldStrengthValueText.text = magneticFieldStrength.ToString();
+        magneticFieldStrengthValueText.text = magneticFieldStrength.ToString() + " Gauss";
 
     }
 
